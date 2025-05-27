@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> Río Cali 1/6 KR, formulario de registro </title>
+  <meta name="keywords" content="colaboracion, economía del bien común, emprendimiento"/>
+  <meta name="description" content="Plataforma para desarrollo de proyectos productivos con bonos de intercambio"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lcq_nYpAAAAABn6fBKjPMcN-LCIzSf-bpVLYFM3"></script>
+</head>
+  <body>
+
+    <section class="section has-background-white">
+      <div class="container">
+        <div class="columns is-centered">
+              <img class="logo-intro" src="images/logo.png" alt="Logo">
+              <br>
+        </div>
+
+ 
+
+  <form class="" action="registrations.php" method="post">
+   <img class="img" src="images/banner-6r.jpg" alt="banner carrera">
+    <p class="title">A través de nuestra plataforma hemos movilizado a 6.050 personas recogiendo 21 toneladas de residuos de la ronda del río Cali, estamos limpiando el alma del país.</p>
+    <p class="title">Comprando nuestro kit ayudas nuestro sueño de certificar a 1001 jóvenes como guardianes de los ríos, jóvenes de Siloé, Pradera, el Pondaje, Montebello y la Isla, ya hemos graduado a 72</p>
+    <p class="subtitle">Nuestro movimiento se ha extendido desde Cali hasta Barranquilla.</p>
+    <hr>
+    <p class="subtitle">Sueño, ¿Cual es tu sueño por el río Cali?¿Cuál es tu propósito para participar?</p>
+    <input type="text" class="input is-warning is-fullwidth" name="sueno" placeholder="Introduce tu sueño" required>
+    <input type="text" class="input is-warning is-fullwidth" id="PalabrasClaveSueno" name="palabras_clave_sueno"  placeholder="Ingrese sus palabras clave separadas por comas">
+        <hr>
+        <p class="subtitle">Ofrezco, si fueras a hacer intercambios con participantes de la carrera que podrías ofrecer: Ej: servicios, apoyo, productos.</p>
+    <input type="text" class="input is-warning is-fullwidth" name="ofrezco" value="texto" placeholder="Introduce qué ofreces" required>
+    <input type="text" class="input is-warning is-fullwidth" id="PalabrasClaveOfrezco" name="palabras_clave_ofrezco" value="texto" placeholder="Ingrese sus palabras clave separadas por comas">
+        <hr>
+    <p class="subtitle">Necesito, que necesitas para empezar a cumplir tu sueño con el río Cali</p>
+    <input type="text" class="input is-warning is-fullwidth" name="necesito" value="texto" placeholder="Introduce qué necesitas" required>
+    <input type="text" class="input is-warning is-fullwidth" id="PalabrasClaveNecesito" name="palabras_clave_necesito" value="texto" placeholder="Ingrese sus palabras clave separadas por comas">
+    <hr>    
+    <p class="subtitle">Nombres y apellidos</p>
+    <input type="text" class="input is-warning is-fullwidth" name="name" placeholder="Introduce tu nombre" required>
+<hr>
+    <p class="subtitle">Tipo de Documento</p>
+    <div class="select is-warning is-fullwidth">
+        <select name="document_type" required>
+            <option value="dni">Cédula</option>
+            <option value="dni">Tarjeta de identidad</option> // Agregar tarjeta de identidad
+            <option value="passport">Pasaporte</option>
+            <option value="license">Licencia de Conducir</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+    </div>
+    <hr>
+    <p class="subtitle">Número de Documento</p>
+    <input type="text" class="input is-warning is-fullwidth" name="document_number" placeholder="Ingresa tu número de documento" required>
+    <hr>
+    <p class="subtitle">Tipo de Enfermedad</p>
+<div class="select is-warning is-fullwidth">
+    <select name="disease_type" required>
+        <option value="ninguna">Ninguna</option>
+        <option value="respiratorios">Hipertensión</option>
+        <option value="cardiovasculares">Diabetes</option>
+        <option value="diabetes">Enfermedades respiratorias</option>
+        <option value="sangre">Otras</option>
+       
+        <!-- Agrega más opciones según tus necesidades -->
+    </select>
+</div>
+<hr>
+    <p class="subtitle">Número de Teléfono</p>
+    <input type="tel" class="input is-warning is-fullwidth" name="phone" placeholder="Ingresa tu número de teléfono" pattern="[0-9]{10}" title="Ingresa un número de teléfono válido (10 dígitos)" required>
+    <hr>
+    <p class="subtitle">Ingresa tu correo electrónico</p>
+    <input type="email" class="input is-warning is-fullwidth" name="email" aria-describedby="emailHelp" placeholder="Ingresa tu correo electrónico" required>
+    <hr>
+    <p class="subtitle">Ciudad</p>
+    <input type="text" class="input is-warning is-fullwidth" name="city" placeholder="Ingresa tu ciudad" required>
+    <hr>
+    <p class="subtitle">País</p>
+    <input type="text" class="input is-warning is-fullwidth" name="country" placeholder="Ingresa tu país" required>
+    <hr>
+    <p class="subtitle">Edad</p>
+    <div class="select is-warning is-fullwidth">
+        <select name="age" required>
+            <option value="menor_12">Menor de 12 años</option>
+            <option value="12_18">12 a 18 años</option>
+            <option value="19_25">19 a 25 años</option>
+            <option value="26_39">26 a 39 años</option>
+            <option value="40_59">40 a 59 años</option>
+            <option value="60_79">60 a 79 años</option>
+            <option value="80_mas">80 años en adelante</option>
+        </select>
+    </div>
+    <hr>
+            <p class="subtitle">Talla de Camiseta (Solo para los participantes que compran Kit)</p>
+        <div class="select is-warning is-fullwidth">
+            <select name="shirt_size" required>
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+            </select>
+        </div>
+        <hr>
+    <p class="subtitle">Género</p>
+    <div class="select is-warning is-fullwidth">
+        <select name="gender" required>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="lgtbi">LGTBI</option>
+            <option value="otro">Otro</option>
+        </select>
+    </div>
+    <hr>
+    <p class="subtitle">EPS</p>
+    <div class="select is-warning is-fullwidth">
+        <select name="eps" required>
+            <option value="coomeva">Coomeva</option>
+            <option value="nueva_eps">Nueva EPS</option>
+            <option value="sanitas">Sanitas</option>
+            <option value="sisben">Sisben</option>
+            <option value="sura">Sura</option>
+            <option value="otra">Otra</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+    </div>
+    <hr>
+    <p class="subtitle">Tipo de Sangre</p>
+    <div class="select is-warning is-fullwidth">
+        <select name="blood_type" required>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+    </div>
+    <hr>
+    <p class="subtitle">Modalidad de participación</p>
+    <div class="select is-warning is-fullwidth">
+        <select name="modalidad_participacion" required>
+            <option value="kit-padrino">Quiero comprar el kit PADRINO de $150.000 que incluye 2 PASES CON: camiseta, bolsas, guantes, tapabocas, semillas y los papayos</option>
+            <option value="kit">Quiero comprar el kit de $100.000 que incluye camiseta, bolsas, guantes, tapabocas, semillas y los papayos</option>
+            <option value="kit-agenda">Quiero comprar el kit de $120.000 que incluye la Agenda de los sueños, camiseta, semillas, vela, bolsas, guantes, tapabocas y los papayos</option>
+            <option value="no_puedo_sumo">No puedo aportar a la organización sin embargo quiero sumarme, no incluye kit, ni camiseta, ni papayos</option>
+            <option value="donativo">Voy a aportar un donativo voluntario, no incluye kit, ni camiseta, ni papayos</option>
+            <option value="tapitas">Voy a aportar con tapitas, no inlcuye kit, ni camiseta, ni papayos</option>
+            <option value="mascotas">Voy a aportar alimento de mascotas, no inluye kit, ni camiseta, ni papayos</option>
+            <option value="acuerdo_empresa">Acuerdo empresarial</option>
+            <option value="otro">Quiero proponer algo más en las observaciones</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+    </div>
+    <hr>
+    <p class="subtitle">Vienes referido por:</p>
+    <div class="select is-warning is-fullwidth">
+        <select name="observaciones" required>
+            <option value="san_luis">San Luis Gonzaga</option>
+            <option value="jaz">Jazmin Arévalo</option>
+            <option value="aleja">Alejandra Avendaño</option>
+            <option value="carlos">Carlos Tafurt</option>
+            <option value="otro">Otro</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+    </div>
+    <hr>
+    <p class="subtitle">Ingresa tu contraseña (mínimo 10 caracteres)</p>
+    <input type="password" class="input is-warning is-fullwidth" name="password" placeholder="Ingresa tu contraseña" required minlength="10">
+
+    <p class="subtitle">Confirma tu contraseña</p>
+    <input type="password" class="input is-warning is-fullwidth" name="confirm_password" placeholder="Confirma tu contraseña" required minlength="10">
+  
+    
+        <!-- Password Strength Indicator (optional) -->
+        <!-- Add JavaScript to check the password strength and update the indicator -->
+        <!-- <div id="password-strength-indicator"></div> -->
+    
+        <label class="checkbox">
+            <input type="checkbox" name="agree" required>
+            Acepto los <a href="/terminos.html" target="blanck"> términos y condiciones </a>
+        </label>
+    
+        <!-- CSRF Token (add this to your PHP processing) -->
+        <!-- <input type="hidden" name="csrf_token" value="generate_your_csrf_token_here"> -->
+    
+        <button class="button is-warning is-active" type="submit" name="submit">Enviar</button>
+        <br>
+        <script>
+            function onClick(e) {
+              e.preventDefault();
+              grecaptcha.enterprise.ready(async () => {
+                const token = await grecaptcha.enterprise.execute('6Lcq_nYpAAAAABn6fBKjPMcN-LCIzSf-bpVLYFM3', {action: 'LOGIN'});
+              });
+            }
+          </script>
+    </form>
+    </div>
+  </div>
+</div>
+  </body>
+</div>
+</section>
+</html>
